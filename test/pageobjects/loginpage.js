@@ -22,11 +22,10 @@ get loginbtn(){
 
 
 async login(username,password){
-await browser.pause(3000); 
+   await browser.pause(3000); 
    await this.user.setValue(username);
    await browser.pause(3000); 
    await this.pass.setValue(password);
-   await browser.pause(3000); 
    await this.loginbtn.click();
    await browser.pause(3000); 
 }
